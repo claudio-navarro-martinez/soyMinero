@@ -11,4 +11,7 @@ https://blog.art-of-coding.eu/using-oracle-logminer/
 
 https://orajavasolutions.wordpress.com/2013/03/21/using-logminer-and-archive-logging-with-oracle-11gr2/
 
+https://scalaruss.wordpress.com/2013/01/
+
+
 
