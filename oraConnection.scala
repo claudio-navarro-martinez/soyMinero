@@ -30,9 +30,9 @@ object oracleClientLogMiner {
  // ? indicates parameter - in, out and cursor. 
   val callString = "{ call DBMS_LOGMNR.START_LOGMNR(STARTTIME => ’15-MAY-2015 00:00:00′, ENDTIME => SYSDATE, OPTIONS => DBMS_LOGMNR.DICT_FROM_ONLINE_CATALOG + DBMS_LOGMNR.CONTINUOUS_MINE ) }" 
   val callableStatement = connection prepareCall callString 
- // Sets third parameter to output as cursor. 
-  callableStatement registerOutParameter(3, OracleTypes.CURSOR) // or eg FLOAT 
+  
   callableStatement execute 
+ 
  // Gets the returned value of the output parameter as an Object. 
   val resultObject = callableStatement getObject 3 // or eg getFloat 
     
